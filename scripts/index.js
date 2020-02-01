@@ -1,5 +1,5 @@
 /*
-Notes: 
+Notes:
 'data' is lazily imported from the html
 'seedrandom' is also imported from html. it gives deterministic random #s based on a seed set in fire()
 */
@@ -47,6 +47,9 @@ function fire() {
 		case 'movies':
 			sessionData = movieData.slice(0);
 			break;
+		case 'christian':
+			sessionData = christianData.slice(0);
+			break;
 		case 'custom':
 			if (customData.length === 0) {
 				var customWordList = prompt("Please enter custom word list. The list will be saved until your refresh your browser. (The words MUST be delimanted by spaces). eg: cat dog mouse", "Enter words here");
@@ -55,7 +58,7 @@ function fire() {
 			sessionData = customData.slice(0);
 			break;
 		default:
-			sessionData = defaultData.slice(0);
+			sessionData = christianData.slice(0);
 	}
 
 	wordsSelected = [];
@@ -113,7 +116,7 @@ function createNewGame() {
 		$('#board').addClass('blueStarts').removeClass('redStarts');
 	}
 
-	// add neturals 
+	// add neturals
 	for (var i = 0; i < 7; i++) {
 		teams.push(COLOR_YELLOW);
 	}
