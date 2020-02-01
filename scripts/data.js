@@ -1102,4 +1102,4 @@ var christianData = [
 	"COVENANT",
 	"TABERNACLE",
 	"TEMPLE"
-]
+];
