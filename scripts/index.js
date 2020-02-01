@@ -58,7 +58,7 @@ function fire() {
 			sessionData = customData.slice(0);
 			break;
 		default:
-			sessionData = spanishData.slice(0);
+			sessionData = christianData.slice(0);
 	}
 
 	wordsSelected = [];
